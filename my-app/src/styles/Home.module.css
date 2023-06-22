@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap&family=Noto+Serif:wght@400;700&display=swap");
+/* Navbar */
+.navbarWrapper {
+  width: 100vw;
+  height: 15vh;
+  background-color: #f0e285;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: -3px;
+}
+.navbarWrapper h2 {
+  font-family: Asap;
+}
+
+.navLogo {
+  padding-left: 30px;
+}
+.navLinks{
+  display: flex;
+}
+.navLinks > * {
+  font-family: Noto Serif;
+  margin-right: 100px;
+  color: #020d3d;
+  cursor: pointer;
+  text-decoration: none;
+}
+.navLinks button {
+  padding: 12px;
+  border: none;
+  background-color: #fd5921;
+  color: #ffffff;
+}
+
+/* Hero */
+.heroWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.heroContent h1 {
+  font-family: Asap;
+  font-size: 48px;
+  font-weight: 700;
+  width: 60%;
+  line-height: 70px;
+}
+.heroContent p {
+  font-family: Noto Serif;
+  font-size: 18px;
+  color: #020d3d;
+}
+.heroContent button {
+  padding: 14px 32px;
+  border: none;
+  background-color: #fd5921;
+  color: #ffffff;
+  margin-top: 20px;
+  font-family: Noto Serif;
+  cursor: pointer;
+ 
+}
+.heroImage img {
+  width: 100%;
+}
+
+/* Mint */
+.mintWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.form label {
+  margin-top: 25px;
+  margin-bottom: 8px;
+  font-family: Noto Serif;
+  font-size: 18px;
+  color: #020d3d;
+}
+.form input {
+  /* padding: 12px 50px; */
+  width: 250px;
+  height: 40px;
+  border: #0F1E60 1px solid;
+  background-color: #f0e285;
+  outline: none;
+}
+.container {
+  width: 300px;
+  height: 350px;
+  background-color: #f0e285;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.uploadIcon {
+  color: #0F1E60;
+  cursor: pointer;
+
+}
+.form button {
+  padding: 14px 32px;
+  border: none;
+  background-color: #fd5921;
+  color: #ffffff;
+  margin-top: 30px;
+  font-family: Noto Serif;
+  cursor: pointer;
+}
+
+/* myNft */
+.myNft_wrapper{
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.myNft_wrapper h1{
+  font-family: Asap;
+  margin-top: 40px;
+}
+.myNft_collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+}
+.myNft {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #f0e285;
+  border: #0F1E60 1px solid;
+}
+.myNft img {
+  width: 300px;
+  object-fit: cover;
+}
+.myNft p{
+  font-family: Noto Serif;
+  font-size: 14px;
+  color: #020d3d;
+  padding-left: 20px;
+}
