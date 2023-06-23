@@ -6,7 +6,6 @@ import { ethers} from "ethers";
 import { pinJSONToIPFS } from "../utils/uploadToPinata";
 require("dotenv").config();
 
-
 const Mint = () => {
   //   // Frontend Image
   //   // Refs for form inputs and image

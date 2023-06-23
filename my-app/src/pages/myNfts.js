@@ -1,7 +1,10 @@
 import { useState, useEffect } from "react";
 import Navbar from "../../components/Navbar";
 import * as styles from "@/styles/Home.module.css";
+require("dotenv").config();
 
+const apiKey = process.env.NEXT_PUBLIC_PINATA_API_KEY;
+const secretKey = process.env.NEXT_PUBLIC_PINATA_API_SECRET;
 const Marketplace = () => {
   const [loading, setLoading] = useState(false);
   const [myNfts, setMyNfts] = useState([]);
@@ -14,12 +17,11 @@ const Marketplace = () => {
     setLoading(true);
     try {
       const response = await fetch(
-        "https://api.pinata.cloud/data/pinList?status=pinned&pinSizeMin=100",
+        "https://api.pinata.cloud/data/pinList?status=pinned&pinSizeMin=100&pageLimit=14",
         {
           headers: {
-            pinata_api_key: "6b65e6865865fe0b6f3b",
-            pinata_secret_api_key:
-              "95963c64a37819e5a0cd38969ea7eaa43200994ac102974c8534000ccf60df37",
+            pinata_api_key: apiKey,
+            pinata_secret_api_key: secretKey,
             "Content-Type": "application/json",
           },
         }
